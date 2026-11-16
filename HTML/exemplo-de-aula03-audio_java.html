@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio em html</title>
+</head>
+<body>
+    <h1>audio em html<h1>
+        <p> clique o botao de reprodução para ouvir o audio</p>
+
+    <audio  id="Meu-audio" controls loop>
+    <source src="audio/oh-no-no-no-tik-tok-song-sound-effect.mp3" type="audio/mpeg"> 
+
+    seu navegador nao suporta a reprodução de video
+    </audio>
+
+    <script>
+        const audio=document.getElementById("meu-audio")
+        audio.volume= 0.5;
+    </script>
+</body>
+</html>
