@@ -1,0 +1,13 @@
+.caixa{
+    border: 3px solid red;
+    background-color: green;
+    color: white;
+    padding: 10px;
+     
+}
+
+
+#aviso{
+    width: 200px;
+    height: 100px;
+}
