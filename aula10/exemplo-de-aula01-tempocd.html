@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horario e previsão do tempo</title>
+</head>
+<body>
+    <h1>horario e previsão do tempo</h1>
+    <p>
+        o programa mostrará uma saudação e uma recompensa
+        do clima atual
+    </p>
+
+    <script>
+        const dataHora= new Date();
+        const Hora= dataHora.getHours();
+
+        let previsãoTempo = prompt(
+            "Como esta o dia hoje? Digite chuvoso ou ensolarado"
+        );
+
+        previsãoTempo = previsãoTempo.toLowerCase().trim();
+
+
+        if(Hora<12){
+            alert("bom dia)");
+            if(previsãoTempo ==="chuvoso"){
+                alert("está chuvendo, leve o guarda chuva");
+            } else if(previsãoTempo ==="ensolarado"){
+                alert("esta ensolarado, que otimo otimo dia para viver");
+            } else{
+                alert("nenhuma opçao selecionada...");
+            }
+
+        }else if(Hora<18){
+            alert("buenas tardes");
+            if(previsãoTempo ==="chuvoso"){
+                alert("está chuvendo, leve o guarda chuva");
+            } else if(previsãoTempo ==="ensolarado"){
+                alert("esta ensolarado, que otimo otimo dia para viver");
+            } else{
+                alert("nenhuma opçao selecionada...");
+            }
+
+        }else{
+            alert("Boa noite");
+            if(previsãoTempo ==="chuvoso"){
+                alert("está chuvendo, leve o guarda chuva");
+            } else if(previsãoTempo ==="ensolarado"){
+                alert("esta ensolarado, que otimo otimo dia para viver");
+            } else{
+                alert("nenhuma opçao selecionada...");
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>
